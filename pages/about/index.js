@@ -229,7 +229,7 @@ const About = () => {
                 <div className="flex gap-x-4">
                   {/* icons */}
                   {item.icons?.map((icon, iconIndex) => (
-                    <div className="text-2xl text-white">{icon}</div>
+                    <div className="text-2xl text-white" key={iconIndex}>{icon}</div>
                   ))}
                 </div>
               </div>
