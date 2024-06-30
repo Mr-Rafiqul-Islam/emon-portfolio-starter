@@ -1,5 +1,6 @@
 // components
 import Circles from "../../components/Circles";
+import Bulb from "../../components/Bulb";
 
 // icons
 import { BsArrowRight } from "react-icons/bs";
@@ -12,6 +13,7 @@ import { fadeIn } from "../../variants";
 const Contact = () => {
   return (
     <div className="h-full bg-primary/30 py-32 ">
+      <Circles />
       <div className="container mx-auto text-center xl:text-left flex items-center justify-center h-full">
         {/* text & form */}
         <div className="flex flex-col w-full max-w-[700px]">
@@ -50,6 +52,7 @@ const Contact = () => {
           </motion.form>
         </div>
       </div>
+      <Bulb />
     </div>
   );
 };
