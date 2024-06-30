@@ -46,7 +46,7 @@ const workSlides = {
 
 // swiper
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Pagination, Autoplay } from 'swiper';
+import  { Pagination } from 'swiper/modules';
 
 // swiper styles
 import "swiper/css";
@@ -63,16 +63,13 @@ import Image from "next/image";
 
 
 const WorkSlider = () => {
-  // Ensure Swiper modules are imported
-SwiperCore.use([Pagination, Autoplay]);
   return (
     <Swiper
-      
+      modules={[Pagination]}
       spaceBetween={10}
       pagination={{
         clickable: true,
       }}
-      autoplay={{ delay: 1000, disableOnInteraction: false }}
       className="h-[280px] sm:h-[480px]"
     >
      {workSlides.slides.map((slide, index) => (
