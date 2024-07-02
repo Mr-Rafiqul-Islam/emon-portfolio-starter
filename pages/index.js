@@ -55,7 +55,7 @@ const Home = () => {
         {/* bg img */}
         <div className="bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full  mix-blend-color-dodge translate-z-0  "></div>
         {/* particles */}
-        <ParticlesContainer/>
+        {/* <ParticlesContainer/> */}
         {/* Avatar img */}
         <motion.div
           variants={fadeIn("up", 0.5)}
