@@ -1,6 +1,6 @@
 import ProjectsBtn from "../components/ProjectsBtn";
 import Avatar from "../components/Avatar";
-import ParticlesContainer from "../components/ParticlesContainer";
+// import ParticlesContainer from "../components/ParticlesContainer";
 
 // framer motion
 import { motion } from "framer-motion";
